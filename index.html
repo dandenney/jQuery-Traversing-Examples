@@ -4,7 +4,8 @@
 <head>
 	<meta charset="utf-8" />  
 	<title>jQuery Traversing Examples</title>
-	<link rel="stylesheet"  media="screen" href="normalize.css">
+	<link rel="stylesheet"  media="screen" href="css/normalize.css">
+	<link rel="stylesheet"  media="screen" href="css/style.css">
 </head>  
 
 <body>
@@ -15,19 +16,85 @@
 		<li>Create a basic page layout with elements to traverse through</li>
 		<li>Figure out an intuitive way to show the DOM path</li>
 		<li>Make it happen, cap'n.</li>
-	</ol>
+	</ol>	
 	
 	<header>
-		
+		<p>Logo</p>  <nav>nav</nav>
 	</header>
 	
 	<section>
-		
+		<ol>
+			<li>
+				<ol>
+					<li>I was born long ago</li>
+					<li>I am the chosen, I'm the one</li>
+					<li>I have come to save the day</li>
+					<li>And I won't leave until I'm done</li>
+				</ol>
+			</li>
+			<li>	
+				<ol>
+					<li>So, that's why you've got to try</li>
+					<li>You got to breath and have some fun</li>
+					<li>Though I'm not paid, I play this game</li>
+					<li>And I won't stop until I'm done</li>
+				</ol>
+			</li>
+			<li>	
+				<ol>
+					<li>But what I really want to know is</li>
+					<li>Are you gonna go my way ?</li>
+					<li>And I got to</li>
+					<li>Got to know</li>
+				</ol>
+			</li>
+			<li>				
+				<ol>
+					<li>I don't know why we always cry</li>
+					<li>This we must leave and get undone</li>
+					<li>We must engage and rearrange</li>
+					<li>And turn this planet back to one</li>
+				</ol>
+			</li>
+			<li>				
+				<ol>
+					<li>So, tell me why we got to die</li>
+					<li>And kill each other one by one</li>
+					<li>We've got to hurt and rub a dub</li>
+					<li>We've got to dance and be in love</li>
+				</ol>
+			</li>
+			<li>				
+				<ol>
+					<li>But what I really want to know is</li>
+					<li>Are you gonna go my way ?</li>
+					<li>And I got to</li>
+					<li>Got to know</li>
+
+				</ol>
+			</li>
+			<li>				
+				<ol>					
+					<li>Are you gonna go my way ?</li>
+					<li>'Cause baby I got to know, yeah</li>
+				</ol>
+			</li>
+		</ol>
+			
 	</section>
 	
 	<footer>
-		
+		Sample disclaimer and nav
 	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	
+	<script>
+		$("li ol li").click(function() {
+			$("*").removeClass("show-blocks");
+			$(this).addClass("show-blocks");
+		});
+	</script>
 
 </body>
 
