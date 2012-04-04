@@ -96,9 +96,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	
 	<script>
-		$("#verse li").click(function() {
-			$("html").addClass("show-elements");
-			$(this).parent().find("li:nth-child(2)").addClass("show-blocks");
+		$("header, section, aside, nav, ol, li, p").click(function() {
+			
+			$(this).parent().addClass("show-elements");
 		});
 	</script>
 

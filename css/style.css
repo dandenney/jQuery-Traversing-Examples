@@ -4,16 +4,18 @@
    ========================================================================== */
 	
 	* {
-		border: 1px solid #fff;
+		border: 1px solid #111111;
 		padding: .25em; }
 	
 	body {
+		background: #111;
+		color: #fff;	
 		font-size: 16px; }
 
 	header,
 	section,
 	footer {
-		border: 1px solid #fff;
+		border: 1px solid #111111;
 		margin: 1.5em auto;
 		width: 60em; }
 		
@@ -43,37 +45,64 @@
    ========================================================================== */
 		
 	.show-blocks {
-		border: 1px solid #ff0000; }
+		border: 1px solid #111111; }
 	
 	*:before {
-		color: #fff;
+		color: #666;
 		font-size: .75em;
 		left: 0;
 		top: 0; }
 	
 	*:after {
-		color: #fff;
+		color: #666;
 		bottom: -2em;
 		font-size: .75em;
 		left: auto;
 		right: -6em;
 		top: auto; }
 		
-	.show-elements *:before,
-	.show-elements *:after {
-		color: #999; }	
+	.show-elements {
+		border: 1px solid #333; }
+		
+	.show-elements:before,
+	.show-elements:after {
+		color: #ff0000;}
+		
+	html:before {
+		content: "<html>" }
+		
+	html:after {
+		content: "</html>"; }
+		
+	body:before {
+		content: "<body>" }
+		
+	body:after {
+		content: "</body>"; }
 		
 	header:before {
 		content: "<header>"; }
 		
+	header:after {
+		content: "</header>"; }
+		
 	section:before {
 		content: "<section>"; }
+		
+	section:after {
+		content: "</section>"; }
 		
 	aside:before {
 		content: "<aside>"; }
 		
+	aside:after {
+		content: "</aside>"; }
+				
 	footer:before {
-		content: "<footer>"; }
+		content: "<footer>"; }	
+		
+	footer:after {
+		content: "</footer>"; }
 		
 	nav:before {
 		content: "<nav>"; }
